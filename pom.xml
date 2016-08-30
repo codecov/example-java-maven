@@ -21,7 +21,7 @@
 	<packaging>jar</packaging>
 
 	<name>Cobertura Maven plug-in example for Java project</name>
-	<url>http://www.eclemma.org/jacoco</url>
+	<url>http://cobertura.github.io/cobertura/</url>
 
 	<dependencies>
 		<dependency>
