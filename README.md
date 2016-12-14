@@ -1,4 +1,4 @@
-[Codecov][0] Java Maven Example
+[Codecov][0] Java Maven Example [![Build Status](https://travis-ci.org/Jimver/example-java-maven.svg?branch=master)](https://travis-ci.org/Jimver/example-java-maven)
 ===============================
 
 1. Add `cobertura-maven-plugin` plugin to your pom.xml file, [see here](https://github.com/codecov/example-java-maven/blob/master/pom.xml#L47-L58)
