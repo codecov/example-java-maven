@@ -1,4 +1,4 @@
-[Codecov][0] Java Maven Example1
+[Codecov][0] Java Maven Example
 ===============================
 
 1. Add `cobertura-maven-plugin` plugin to your pom.xml file, [see here](https://github.com/codecov/example-java-maven/blob/master/pom.xml#L47-L58)
