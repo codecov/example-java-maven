@@ -7,7 +7,7 @@
   - Using Travis CI, CircleCI or AppVeyor **AND** the repository is public? **You're done!** No token needed.
   - Otherwise, please add this your [repository token token][5].
 
-> Other Examples
+> Other Examples1
 > - [Java JaCoCo Example][1]
 > - [Android Example][3]
 > - [Gradle Example][2]
