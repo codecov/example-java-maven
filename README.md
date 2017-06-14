@@ -5,7 +5,7 @@
 1. Call `mvn cobertura:cobertura` during your CI tests, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L4)
 1. Call `bash <(curl -s https://codecov.io/bash)` at the end of your CI build, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L7)
   - Using Travis CI, CircleCI or AppVeyor **AND** the repository is public? **You're done!** No token needed.
-  - Otherwise, please add your [repository token token][5].
+  - Otherwise, please add this your [repository token token][5].
 
 > Other Examples
 > - [Java JaCoCo Example][1]
