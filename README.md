@@ -1,7 +1,7 @@
 [Codecov][0] Java Maven Example [![Build Status](https://travis-ci.org/Jimver/example-java-maven.svg?branch=master)](https://travis-ci.org/Jimver/example-java-maven)
 ===============================
 
-1. Add `cobertura-maven-plugin` plugin to your pom.xml file, [see here](https://github.com/codecov/example-java-maven/blob/master/pom.xml#L47-L58)
+1. Add `cobertura-maven-plugin` plugin to your pom.xml files, [see here](https://github.com/codecov/example-java-maven/blob/master/pom.xml#L47-L58)
 1. Call `mvn cobertura:cobertura` during your CI tests, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L4)
 1. Call `bash <(curl -s https://codecov.io/bash)` at the end of your CI build, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L7)
   - Using Travis CI, CircleCI or AppVeyor **AND** the repository is public? **You're done!** No token needed.
