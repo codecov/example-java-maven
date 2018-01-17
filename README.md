@@ -1,21 +1,57 @@
-[Codecov][0] Java Maven Example
-===============================
+# [Codecov][1] Java Maven Example
+## Guide
+### Travis Setup
 
-1. Add `cobertura-maven-plugin` plugin to your pom.xml file, [see here](https://github.com/codecov/example-java-maven/blob/master/pom.xml#L47-L58)
-1. Call `mvn cobertura:cobertura` during your CI tests, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L4)
-1. Call `bash <(curl -s https://codecov.io/bash)` at the end of your CI build, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L7)
-  - Using Travis CI, CircleCI or AppVeyor **AND** the repository is public? **You're done!** No token needed.
-  - Otherwise, please add your [repository token token][5].
+Add to your `.travis.yml` file.
+```yml
+language: java
 
-> Other Examples
-> - [Java JaCoCo Example][1]
-> - [Android Example][3]
-> - [Gradle Example][2]
+script: "mvn cobertura:cobertura"
 
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+### Produce Coverage Reports
+#### Add Cobertura plugin
+```xml
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>cobertura-maven-plugin</artifactId>
+    <version>2.7</version>
+    <configuration>
+        <formats>
+            <format>html</format>
+            <format>xml</format>
+        </formats>
+        <check />
+    </configuration>
+</plugin>
+```
+Call `mvn cobertura:cobertura` during your CI tests, [see here](https://github.com/codecov/example-java-maven/blob/master/.travis.yml#L4)
 
+## Caveats
+### Private Repos
+Add to your `.travis.yml` file.
+```yml
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
+```
+## Support
+### FAQ
+- Q: Is there a Gradle example?<br/>A: **Yes**, enter [codecov/example-gradle][2]
+- Q: Is there a Andorid example?<br/>A: **Yes**, enter [codecov/example-android][3]
+- Q: Is there a Jacoc example?<br/>A: **Yes**, enter [codecov/example-java][4]
 
-[0]: https://codecov.io/
-[1]: https://github.com/codecov/example-java
+### Contact
+- Intercom (in-app messanger)
+- Email: [support@codecov.io](mailto:support@codecov.io)
+- Slack: [slack.codecov.io](https://slack.codecov.io)
+- [gh/codecov/support](https://github.com/codecov/support)
+
+1. More documentation at https://docs.codecov.io
+2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
+
+[1]: https://codecov.io/
 [2]: https://github.com/codecov/example-gradle
 [3]: https://github.com/codecov/example-android
-[5]: http://docs.codecov.io/docs/about-the-codecov-bash-uploader#section-upload-token
+[4]: https://github.com/codecov/example-java
