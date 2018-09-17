@@ -40,7 +40,7 @@ after_success:
 ### FAQ
 - Q: Is there a Gradle example?<br/>A: **Yes**, enter [codecov/example-gradle][2]
 - Q: Is there a Andorid example?<br/>A: **Yes**, enter [codecov/example-android][3]
-- Q: Is there a Jacoc example?<br/>A: **Yes**, enter [codecov/example-java][4]
+- Q: Is there a JaCoCo example?<br/>A: **Yes**, enter [codecov/example-java][4]
 
 1. More documentation at https://docs.codecov.io
 2. Configure codecov through the `codecov.yml`  https://docs.codecov.io/docs/codecov-yaml
