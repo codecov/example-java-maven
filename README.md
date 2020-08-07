@@ -6,6 +6,11 @@ Add to your `.travis.yml` file.
 ```yml
 language: java
 
+# Cobertura is not supported in JDK11 so you must downgrade the JDK that Travis uses if you want to use Cobertura with Travis.
+# See https://github.com/cobertura/cobertura/issues/381
+jdk:
+  - openjdk8
+
 script: "mvn cobertura:cobertura"
 
 after_success:
