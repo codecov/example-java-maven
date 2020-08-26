@@ -1,4 +1,6 @@
 # [Codecov][1] Java Maven Example
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java-maven.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java-maven?ref=badge_shield)
+
 ## Guide
 ### Travis Setup
 
@@ -56,3 +58,7 @@ We are happy to help if you have any questions. Please contact email our Support
 [2]: https://github.com/codecov/example-gradle
 [3]: https://github.com/codecov/example-android
 [4]: https://github.com/codecov/example-java
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java-maven.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-java-maven?ref=badge_large)
