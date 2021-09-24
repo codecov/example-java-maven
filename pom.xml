@@ -30,6 +30,13 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-clean-plugin</artifactId>
+  			<version>3.1.0</version>
+  			<type>maven-plugin</type>
+		</dependency>
+
 	</dependencies>
 
 	<build>
